@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VitalRepo | Exclusive Vital Synth Presets</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #e0e0f0;
+            position: relative;
+            z-index: 0;
+        }
+
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background: linear-gradient(to bottom, #070716, #000005);
+            }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            background-color: #0d0d1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            header h1 {
+                margin: 0;
+                display: inline-block;
+                background: linear-gradient(to right, #906de9, #80d0ff);
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+            }
+
+        nav a {
+            color: #e0e0f0;
+            margin-left: 1.5rem;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d0d1a, #1b1b30);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+            .hero h2 {
+                color: #80d0ff;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                max-width: 600px;
+                margin: 0 auto;
+                color: #ccc;
+            }
+
+        .features,
+        .pricing,
+        .contact {
+            padding: 1rem;
+            text-align: center;
+        }
+
+            .features h3,
+            .pricing h3,
+            .contact h3 {
+                color: #906de9;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .features ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .features li {
+                margin: 0.5rem 0;
+            }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .pricing .card {
+            background-color: #1a1a2f;
+            flex: 1 1 350px;
+            max-width: 500px;
+            min-width: 200px;
+            padding: 1.5rem;
+            border: 2px solid #2c2c4c;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cardLong-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cardLong {
+            background-color: #1a1a2f;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+            border: 2px solid #2c2c4c;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            max-width: calc(500px * 2 + 20px);
+            box-sizing: border-box;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            width: 100%;
+        }
+
+            .cardLong .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem 2rem;
+                text-align: left;
+                justify-items: start;
+            }
+
+
+        .card-button {
+            background-color: #906de9;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+            .card-button:hover {
+                background-color: #7c56c9;
+            }
+
+            .card-button:active {
+                background-color: #6a3eb6;
+            }
+
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VitalRepo</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Premium Vital Synth Presets</h2>
+            <p>
+                Get exclusive, high-quality Vital presets every month. Only on VitalRepo.
+                Subscription-based. First of its kind.
+            </p>
+        </section>
+
+        <section class="features" id="features">
+            <h3>What You Get</h3>
+            <ul>
+                <li>Exclusive presets updated monthly</li>
+                <li>An organized preset library</li>
+                <li>Preset previews and usage tutorials</li>
+                <li>New sound packs just for you</li>
+            </ul>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h3>Pricing</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <h4>Monthly</h4>
+                    <p>$5.99/month</p>
+                    <button class="card-button">Buy</button>
+                </div>
+                <div class="card">
+                    <h4>Annual</h4>
+                    <p>$59.99/year</p>
+                    <button class="card-button">Buy</button>
+                </div>
+            </div>
+
+            <div class="cardLong-wrapper">
+                <div class="cardLong">
+                    <h4>Why You Should Buy:</h4>
+                    <div class="grid">
+                        <p><strong>- Cancel anytime</strong></p>
+                        <p><strong>- Full transparency with all customers</strong></p>
+                        <p><strong>- All preset prices range from free to $1</strong></p>
+                        <p><strong>- Friendly customer service</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h3>Our Socials</h3>
+            <p>
+                Follow us on <strong>Instagram, TikTok</strong>, and join our
+                <strong>Discord</strong> for updates and community.
+            </p>
+            <p>Contact: support@vitalrepo.com</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 VitalRepo. All rights reserved.
+    </footer>
+</body>
+</html>
